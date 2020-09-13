@@ -21,3 +21,34 @@ Writing objects: 100% (3/3), 259 bytes | 64.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/SazaLate/Hellogit.git
  * [new branch]      master -> master
+
+
+C:\GitHub\gittest>git add test.txt
+
+C:\GitHub\gittest>git commit -m "txtの中身を変更"
+[master 3885d9d] txtの中身を変更
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+ rewrite test.txt (100%)
+
+C:\GitHub\gittest>git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 662 bytes | 132.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SazaLate/Hellogit.git
+   ae8658a..3885d9d  master -> master
+
+C:\GitHub\gittest>git branch testbranch
+
+C:\GitHub\gittest>git branch
+* master
+  testbranch
+
+C:\GitHub\gittest>git checkout testbranch
+Switched to branch 'testbranch'
+
+C:\GitHub\gittest>git branch
+  master
+* testbranch
