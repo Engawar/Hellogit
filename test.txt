@@ -1,1 +1,23 @@
-Hello git!
+C:\GitHub>mkdir gittest
+
+C:\GitHub>cd gittest
+
+C:\GitHub\gittest>git init
+Initialized empty Git repository in C:/GitHub/gittest/.git/
+
+C:\GitHub\gittest>git add test.txt
+
+C:\GitHub\gittest>git commit -m "初めてのGitHub！"
+[master (root-commit) ae8658a] 初めてのGitHub！
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C:\GitHub\gittest>git remote add origin https://github.com/SazaLate/Hellogit.git
+
+C:\GitHub\gittest>git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 259 bytes | 64.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SazaLate/Hellogit.git
+ * [new branch]      master -> master
